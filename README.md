@@ -1,4 +1,4 @@
-####**Vault - Abstraction Library for Bukkit**
+######**Vault - Abstraction Library for Bukkit**
 
 ###*For Developers:*
 
