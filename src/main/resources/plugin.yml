@@ -1,0 +1,7 @@
+name: VaultDB
+version: 1.0
+description: VaultDB - Store currency in databases!
+authors: [RitzDever]
+main: me.ritzdever.currency.CurrencyPlugin
+depend: [Vault]
+load: startup
