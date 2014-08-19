@@ -4,10 +4,32 @@
 
 Please see the VaultAPI page for information on developing with Vault's API. In the past you would use the same artifact as servers installed, but the API has now been split from the main project and is under a different artifact name. Please make sure you accomodate for this change in your build process.
 
+YES! This means that you can use vaults API to get info from the db!
+It will lagg a bit in this current build, but I am currently implementing multi threading to make it faster!
+
 ###*Installing*
 
-Installing VaultDB is as simple as copying the provided "Vault.jar" to your "/plugins" directory and the rest is automatic! 
-Make sure you have Vault installed as well, since this plugin is an addon for it :P
+#####Config:
+
+An example:
+```
+database:
+  address: 127.0.0.1:3306
+  username: root
+  password:
+  table: currency
+  name: test
+format: ${}
+initial-balance: 50
+prune-age: 30d
+
+```
+
+I have a database on my localhost(port 3306 is the default port), the credentials is user(root) and password().
+The database is "test" and the table is, "currency."
+Adding three columns, "balance", "account", and "last_update", the datatypes are "varchar" and there lengths are 255.
+
+Currently working on automaking the tables.
 
 
 ###*License*
